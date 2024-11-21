@@ -1,0 +1,144 @@
+/* General styles */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -50px;
+    overflow: hidden;
+}
+
+.container .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.container .item {
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.container .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content for name and description */
+.container .item .content {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: #d8a85f;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.container .item .content .name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container .item .content .description {
+    font-size: 1.2em;
+    max-width: 50%;
+    line-height: 1.5;
+}
+
+/* Navigation buttons */
+.button {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.button button {
+    pointer-events: all;
+    background: rgba(4, 4, 4, 0.5);
+    color: #a46f6f;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.button button:hover {
+    background: #d28585;
+}
+
+/* Thumbnails */
+.thumbnails {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.thumbnails img {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnails img:hover {
+    border-color: #d28585;
+}
+
+/* Navigation buttons */
+.button {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.button button {
+    pointer-events: all;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.button button:hover {
+    background: #d28585;
+}
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+header a{
+    color: #eee;
+    margin-right: 40px;
+}

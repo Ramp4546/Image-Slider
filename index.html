@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Image Slider with Thumbnails</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="">Home</a>
+        <a href="./info.html">Info</a>
+    </nav>
+</header>
+  <div class="container">
+    <!-- Slider -->
+    <div class="slide">
+      <div class="item">
+        <img src="./IMAGES/horizon-dawn.jpg" alt="Horizon Dawn">
+        <div class="content">
+          <h2 class="name">Horizon Dawn</h2>
+          <p class="description">Horizon Zero Dawn’s open world is such a visual masterpiece, which immerses players in awe-inspiring environments.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="IMAGES/farcry-4.jpg" alt="Far Cry 4">
+        <div class="content">
+          <h2 class="name">Far Cry 4</h2>
+          <p class="description">The game features an open world environment that is free for players to explore, including forests, rivers, and mountains.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./IMAGES/GTA-5.jpg" alt="GTA 5">
+        <div class="content">
+          <h2 class="name">GTA 5</h2>
+          <p class="description">Explore the sprawling city of Los Santos with hills, countryside, beaches, and more in this open-world game.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./IMAGES/HP-hogwarts.jpg" alt="Hogwarts Legacy">
+        <div class="content">
+          <h2 class="name">Hogwarts Legacy</h2>
+          <p class="description">The game is set in the Scottish Highlands, including Hogwarts and surrounding wizarding territories.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./IMAGES/Assassins-creed.jpg" alt="Assassin's Creed Valhalla">
+        <div class="content">
+          <h2 class="name">Assassin's Creed Valhalla</h2>
+          <p class="description">Explore ancient ruins, cursed artifacts, dark woods, and austere coastlines in this immersive experience.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./IMAGES/metro-exodus.jpg" alt="Metro Exodus">
+        <div class="content">
+          <h2 class="name">Metro Exodus</h2>
+          <p class="description">Set in a post-apocalyptic world, navigate vast landscapes and underground tunnels while battling enemies and uncovering gripping narratives.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./IMAGES/uncharted-lost-leagacy.jpg" alt="Uncharted: Lost Legacy">
+        <div class="content">
+          <h2 class="name">Uncharted: Lost Legacy</h2>
+          <p class="description">An action-adventure game following Chloe Frazer as she embarks on a dangerous treasure-hunting journey through India.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="thumbnails">
+      <img src="./IMAGES/horizon-dawn.jpg" class="thumb" alt="Horizon Dawn Thumbnail" data-index="0">
+      <img src="IMAGES/farcry-4.jpg" class="thumb" alt="Far Cry 4 Thumbnail" data-index="1">
+      <img src="./IMAGES/GTA-5.jpg" class="thumb" alt="GTA 5 Thumbnail" data-index="2">
+      <img src="./IMAGES/HP-hogwarts.jpg" class="thumb" alt="Hogwarts Legacy Thumbnail" data-index="3">
+      <img src="./IMAGES/Assassins-creed.jpg" class="thumb" alt="Assassin's Creed Valhalla Thumbnail" data-index="4">
+      <img src="./IMAGES/metro-exodus.jpg" class="thumb" alt="Metro Exodus Thumbnail" data-index="5">
+      <img src="./IMAGES/uncharted-lost-leagacy.jpg" class="thumb" alt="Uncharted: Lost Legacy Thumbnail" data-index="6">
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="button">
+      <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
